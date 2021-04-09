@@ -1,12 +1,10 @@
-<p id="notice"><%= notice %></p>
-<h1>Publisher dashboard</h1>
 <div class="container">
+  <h1>Editor dashboard</h1>
 <div class="row">
       <table class="table table-striped">
         <tr>
-          <th colspan="4">Title</th>
+            <%= render @posts %>
         </tr>
-        <%= render @posts %>
       </table>
 </div>
 <div class="py-4">
