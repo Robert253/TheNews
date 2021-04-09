@@ -1,0 +1,9 @@
+<div class="container">
+<tr>
+  <td><%= link_to post.title, post_path(post) %></td>
+  <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-sm btn-warning' %></td>
+  <td></td>
+  <td><%= link_to 'Delete', post_path(post), method: :delete,data: {
+     confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger'  %></td>
+</tr>
+</div>
